@@ -1,5 +1,5 @@
 // UniqueVector.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//Нужно реализовать функцию, которая удаляет все дубликаты, а не только подряд идущие, из std::vector.
+//РќСѓР¶РЅРѕ СЂРµР°Р»РёР·РѕРІР°С‚СЊ С„СѓРЅРєС†РёСЋ, РєРѕС‚РѕСЂР°СЏ СѓРґР°Р»СЏРµС‚ РІСЃРµ РґСѓР±Р»РёРєР°С‚С‹, Р° РЅРµ С‚РѕР»СЊРєРѕ РїРѕРґСЂСЏРґ РёРґСѓС‰РёРµ, РёР· std::vector.
 
 #include <iostream>
 #include <vector>
@@ -13,7 +13,7 @@ void removeDuplicates(std::vector<T>& vec) {
     
     auto last = std::unique(vec.begin(), vec.end());
 
-    // Удаляем лишние элементы
+    // РЈРґР°Р»СЏРµРј Р»РёС€РЅРёРµ СЌР»РµРјРµРЅС‚С‹
     vec.erase(last, vec.end());
 }
 
